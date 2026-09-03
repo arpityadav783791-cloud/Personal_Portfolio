@@ -64,7 +64,7 @@ class ProjectsData {
           'Optimizing relational query performance and reactive stream emissions across complex multi-month activity logs without dropping UI frames.',
       results:
           'Fluid 60fps data visualizations, instant offline persistence, and seamless schedule navigation across viewports.',
-      githubUrl: '${PortfolioConstants.githubUrl}/trackmate',
+      githubUrl: 'https://github.com/RishabhHatlunkar/trackmate',
       isFeatured: true,
     ),
     ProjectModel(
