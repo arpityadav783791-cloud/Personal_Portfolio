@@ -37,6 +37,37 @@ class ProjectsData {
       isFeatured: true,
     ),
     ProjectModel(
+      id: 'trackmate',
+      title: 'TrackMate',
+      tagline: 'Personal activity & habit tracker with BLoC, Drift & Analytics',
+      description:
+          'A comprehensive personal scheduled activity and habit tracking application engineered in Flutter. Features structured daily schedule logging, interactive calendar timelines, dynamic visual performance analytics with FL Chart, robust offline persistence using Drift (SQLite), and reactive BLoC state management with GetIt dependency injection.',
+      technologies: [
+        'Flutter',
+        'Dart',
+        'BLoC & Cubit',
+        'Drift (SQLite)',
+        'FL Chart',
+        'Table Calendar',
+        'GoRouter',
+        'GetIt',
+      ],
+      keyFeatures: [
+        'Scheduled activity timeline and habit tracking with interactive Table Calendar integration',
+        'Dynamic data analytics and trend graphs visualizing weekly and monthly performance using FL Chart',
+        'Offline-first architecture with typed reactive database queries powered by Drift (SQLite)',
+        'Decoupled Clean Architecture with BLoC state management and GetIt service location',
+      ],
+      architecture:
+          'Clean Architecture with BLoC/Cubit pattern, Drift ORM database layer, and isolated repository contracts for maximum testability.',
+      challenges:
+          'Optimizing relational query performance and reactive stream emissions across complex multi-month activity logs without dropping UI frames.',
+      results:
+          'Fluid 60fps data visualizations, instant offline persistence, and seamless schedule navigation across viewports.',
+      githubUrl: '${PortfolioConstants.githubUrl}/trackmate',
+      isFeatured: true,
+    ),
+    ProjectModel(
       id: 'tesla-news',
       title: 'Tesla News Application',
       tagline:
@@ -65,35 +96,6 @@ class ProjectsData {
       results:
           'Stable, responsive article rendering with 60fps scrolling and robust offline fallback messaging.',
       githubUrl: '${PortfolioConstants.githubUrl}/tesla-news-application',
-      isFeatured: true,
-    ),
-    ProjectModel(
-      id: 'product-catalog',
-      title: 'Product Catalog App',
-      tagline: 'Dynamic product catalog with REST API integration & search',
-      description:
-          'Built a dynamic product catalog application featuring robust REST API integration for product listings and reliable search functionality. Focused strictly on delivering a clean UI and efficient state management to ensure a smooth, intuitive user journey.',
-      technologies: [
-        'Flutter',
-        'Dart',
-        'REST APIs',
-        'State Management',
-        'Model Serialization',
-        'Material 3',
-      ],
-      keyFeatures: [
-        'Live catalog retrieval and search filtering via RESTful endpoints',
-        'Responsive product grid adapting cleanly across mobile and tablet viewports',
-        'Comprehensive item detail view with pricing, tags, and specification sheets',
-        'Clean state separation ensuring swift UI transitions and fast load times',
-      ],
-      architecture:
-          'Repository pattern isolating mock/live data services from reusable UI components.',
-      challenges:
-          'Designing adaptive card layouts that maintain visual alignment across variable title and description lengths.',
-      results:
-          'Polished shopping catalog experience with smooth navigation and zero layout overflow.',
-      githubUrl: '${PortfolioConstants.githubUrl}/product_catalog_app',
       isFeatured: true,
     ),
     ProjectModel(
