@@ -22,7 +22,8 @@ class PortfolioConstants {
       'https://www.linkedin.com/in/arpit-yadav-ab41333aa/';
   static const String whatsappUrl =
       'https://wa.me/917652086399?text=Hi%20Arpit,%20I%20reviewed%20your%20Flutter%20portfolio';
-  static const String resumePath = 'assets/resume/resume.pdf';
+  static const String resumePath =
+      'https://raw.githubusercontent.com/arpityadav783791-cloud/Personal_Portfolio/main/Arpit_Kumar_Yadav_Resume.pdf';
 
   // Recruiter Key Stats
   static const String cgpa = '8.5 / 10';
