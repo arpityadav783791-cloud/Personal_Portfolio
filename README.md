@@ -2,7 +2,7 @@
 
 A responsive, production-quality personal developer portfolio website built with **Flutter Web** and **Material 3**. Engineered to showcase cross-platform engineering expertise, clean code architecture, and high-performance user experiences.
 
-Live Demo: [https://arpityadav.github.io/portfolio/](https://arpityadav.github.io/portfolio/)
+Live Demo: [https://arpityadav783791-cloud.github.io/Personal_Portfolio/](https://arpityadav783791-cloud.github.io/Personal_Portfolio/)
 
 ---
 

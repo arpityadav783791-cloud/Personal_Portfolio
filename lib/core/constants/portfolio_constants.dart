@@ -16,6 +16,8 @@ class PortfolioConstants {
   static const String rawPhone = '7652086399';
   static const String email = 'arpityadav783791@gmail.com';
   static const String location = 'Jaipur, Rajasthan, India';
+  static const String websiteUrl =
+      'https://arpityadav783791-cloud.github.io/Personal_Portfolio/';
   static const String githubUsername = 'arpityadav783791-cloud';
   static const String githubUrl = 'https://github.com/arpityadav783791-cloud';
   static const String linkedinUrl =
