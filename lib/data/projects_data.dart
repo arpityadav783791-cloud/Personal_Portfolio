@@ -1,188 +1,185 @@
-import 'package:portfolio/core/constants/portfolio_constants.dart';
-import 'package:portfolio/data/models/project_model.dart';
+import 'models/project_model.dart';
 
 class ProjectsData {
-  ProjectsData._();
-
   static const List<ProjectModel> projects = [
-    ProjectModel(
-      id: 'fixmymeeting',
-      title: 'FixMyMeeting (Production Application)',
-      tagline:
-          'Enterprise multi-module production app at Xavirgin Technologies',
-      description:
-          'Engineered and maintained mission-critical application modules for production deployment, including Marketplace, Auctions, Real-Time Chat, Notifications, and a dynamic Banner System. Integrated location-based services and REST APIs, delivering a highly scalable, resilient, and responsive architecture.',
-      technologies: [
-        'Flutter',
-        'Dart',
-        'GetX',
-        'Clean Architecture',
-        'REST APIs',
-        'Firebase',
-        'Location Services',
-        'Agile CI/CD',
-      ],
-      keyFeatures: [
-        'Production Marketplace & real-time Auction bidding modules',
-        'Real-time Chat with instant messaging and push notification alerts',
-        'Dynamic Banner System enhancing brand interaction and user conversions',
-        'Location-based service integration with background geolocation parsing',
-      ],
-      architecture:
-          'Scalable Clean Architecture + GetX state management decoupling complex network services, local caching, and dynamic responsive views.',
-      challenges:
-          'Maintaining sub-second state synchronization across simultaneous real-time auction bids and chat messages without frame drops.',
-      results:
-          'Successfully deployed to production with high user retention, improved cross-device fluidity, and zero regression defects.',
-      isFeatured: true,
-    ),
     ProjectModel(
       id: 'trackmate',
       title: 'TrackMate',
-      tagline: 'Personal activity & habit tracker with BLoC, Drift & Analytics',
+      tagline: 'Offline-first activity and habit tracker',
       description:
-          'A comprehensive personal scheduled activity and habit tracking application engineered in Flutter. Features structured daily schedule logging, interactive calendar timelines, dynamic visual performance analytics with FL Chart, robust offline persistence using Drift (SQLite), and reactive BLoC state management with GetIt dependency injection.',
+          'Built an offline-first scheduled activity and habit tracker using BLoC state management and typed Drift persistence. Engineered interactive visual analytics and trend metrics with FL Chart and calendar-based timeline scheduling.',
       technologies: [
         'Flutter',
         'Dart',
-        'BLoC & Cubit',
-        'Drift (SQLite)',
+        'BLoC',
+        'Drift',
+        'SQLite',
         'FL Chart',
-        'Table Calendar',
-        'GoRouter',
-        'GetIt',
       ],
       keyFeatures: [
-        'Scheduled activity timeline and habit tracking with interactive Table Calendar integration',
-        'Dynamic data analytics and trend graphs visualizing weekly and monthly performance using FL Chart',
-        'Offline-first architecture with typed reactive database queries powered by Drift (SQLite)',
-        'Decoupled Clean Architecture with BLoC state management and GetIt service location',
+        'Offline-first architecture',
+        'Habit and activity tracking',
+        'Visual analytics and trend metrics',
+        'Calendar-based scheduling',
       ],
       architecture:
-          'Clean Architecture with BLoC/Cubit pattern, Drift ORM database layer, and isolated repository contracts for maximum testability.',
+          'Flutter application using BLoC state management with Drift for typed local persistence.',
       challenges:
-          'Optimizing relational query performance and reactive stream emissions across complex multi-month activity logs without dropping UI frames.',
+          'Designing reliable offline-first data handling and interactive activity analytics.',
       results:
-          'Fluid 60fps data visualizations, instant offline persistence, and seamless schedule navigation across viewports.',
+          'Delivered an offline-first tracker with persistent scheduling, analytics, and trend visualization.',
       githubUrl: 'https://github.com/RishabhHatlunkar/trackmate',
       isFeatured: true,
     ),
+
     ProjectModel(
-      id: 'tesla-news',
-      title: 'Tesla News Application',
-      tagline:
-          'Real-time news aggregator built with Clean Architecture & REST APIs',
+      id: 'linux-rdp-client',
+      title: 'Linux RDP Client',
+      tagline: 'Cross-platform Linux remote desktop client',
       description:
-          'Developed a customized news aggregator utilizing a live News API, featuring advanced search capabilities. Adhered strictly to Clean Architecture principles to implement a highly responsive design unified across multiple mobile and tablet screen sizes.',
-      technologies: [
-        'Flutter',
-        'Dart',
-        'RESTful APIs',
-        'HTTP',
-        'JSON Parsing',
-        'Clean Architecture',
-        'URL Launcher',
-      ],
-      keyFeatures: [
-        'Real-time news feed fetching and serialization using asynchronous HTTP requests',
-        'Clean Architecture decoupling data sources, repository contracts, and presentation',
-        'In-app responsive article reader with external source URL launching',
-        'Advanced search and multi-category filtering for rapid content discovery',
-      ],
-      architecture:
-          'Clean Architecture separating network data sources, repository contracts, and presentation state for complete testability.',
-      challenges:
-          'Handling variable network latency and nested JSON responses from external endpoints reliably without blocking UI frames.',
-      results:
-          'Stable, responsive article rendering with 60fps scrolling and robust offline fallback messaging.',
-      githubUrl: '${PortfolioConstants.githubUrl}/tesla-news-application',
-      isFeatured: true,
-    ),
-    ProjectModel(
-      id: 'cricket-game',
-      title: 'Engineering Cricket Game',
-      tagline:
-          'Interactive Flutter-based finger cricket game with custom animations',
-      description:
-          'Designed and programmed an interactive Flutter-based finger cricket game characterized by complex game logic and fluid custom animations. Applied reliable state management solutions to sustain consistent frame rates and gameplay stability.',
-      technologies: [
-        'Flutter',
-        'Dart',
-        'Custom Game Logic',
-        'Fluid Animations',
-        'Stateful UI',
-      ],
-      keyFeatures: [
-        'Turn-based finger cricket gameplay with randomized computer opponent moves',
-        'Real-time run calculation, wicket tracking, and target score chasing logic',
-        'Custom visual indicators, celebration dialogs, and match summaries',
-        'Instant restart and state-reset functionality with persistent session scoring',
-      ],
-      architecture:
-          'Stateful reactive game loop managing match states, overs, wickets, and scoreboard updates.',
-      challenges:
-          'Synchronizing touch selection, random AI response generation, and scoreboard state transitions instantaneously without visual delays.',
-      results:
-          'Engaging, responsive mobile gaming experience running at full 60fps with intuitive touch controls.',
-      githubUrl: '${PortfolioConstants.githubUrl}/Engineering_cricket_game',
-      isFeatured: false,
-    ),
-    ProjectModel(
-      id: 'weather-app',
-      title: 'Weather Application',
-      tagline: 'High-utility weather tracking app consuming live Weather API',
-      description:
-          'Created a high-utility weather tracking application consuming a dedicated Weather API for real-time local and global forecasts. Leveraged GetX for lightweight state management and incorporated a responsive city-based search infrastructure.',
+          'Built a Linux remote desktop client with connection management, persistent storage, add/edit flows, status tracking, and FreeRDP launching via system processes. Implemented connection validation, favorites/search, configurable resolution, clipboard/audio options, and user-friendly RDP error mapping.',
       technologies: [
         'Flutter',
         'Dart',
         'GetX',
-        'Weather REST API',
-        'JSON Parsing',
-        'Async UI',
+        'GetStorage',
+        'FreeRDP',
+        'Linux',
       ],
       keyFeatures: [
-        'Live city weather search with real-time temperature, humidity, and wind stats',
-        'GetX reactive state management for instant search response and updates',
-        'Multi-day forecast cards with visual weather condition indicators',
-        'Clean visual cards with adaptive indicators matching current atmospheric conditions',
+        'RDP connection management',
+        'Persistent connection storage',
+        'FreeRDP integration',
+        'Connection validation',
+        'Favorites and search',
+        'Configurable resolution',
+        'Clipboard and audio support',
       ],
       architecture:
-          'GetX Controller architecture performing async HTTP calls and deserializing JSON payloads into typed Dart models.',
+          'Flutter application using GetX, GetStorage, and Linux system process integration with FreeRDP.',
       challenges:
-          'Handling intermittent connectivity and mapping complex weather codes into intuitive visual icons.',
+          'Managing RDP processes, connection states, validation, and platform-specific Linux behavior.',
       results:
-          'Fast, reliable weather forecasts with responsive layouts and graceful degradation on network drops.',
-      githubUrl: '${PortfolioConstants.githubUrl}/weather_application',
-      isFeatured: false,
+          'Delivered a functional Linux RDP client with persistent connections, configuration options, and error handling.',
+      githubUrl:
+          'https://github.com/arpityadav783791-cloud/RemoteDesktopConnectivity',
+      isFeatured: true,
     ),
+
     ProjectModel(
-      id: 'unclutter-launcher',
-      title: 'Unclutter Minimalist Launcher',
-      tagline:
-          'Digital detox Android home screen launcher to reduce distractions',
+      id: 'qrcode-generator-reader',
+      title: 'QRCode Generator Reader',
+      tagline: 'Cross-platform QR code generator and reader',
       description:
-          'A clean, text-based minimalist launcher clone inspired by Minimalist Phone. Designed in Flutter to curb smartphone distraction, declutter daily app access, and optimize personal productivity.',
+          'Developed a cross-platform Flutter application that generates QR codes and reads/scans QR codes from the application interface.',
       technologies: [
         'Flutter',
         'Dart',
-        'Android Intents',
-        'Material Design',
-        'Minimalist UI',
+        'QR Code',
       ],
       keyFeatures: [
-        'Alphabetized app list with instant fuzzy search for rapid launching',
-        'Text-only home screen displaying curated focus applications',
-        'Dark mode aesthetic engineered to save battery and reduce eye strain',
-        'Distraction-free interface stripping away notification badges and flashy graphics',
+        'QR code generation',
+        'QR code scanning',
+        'Cross-platform interface',
       ],
       architecture:
-          'Lightweight event-driven architecture querying installed Android packages with minimal memory footprint.',
+          'Flutter cross-platform application with QR generation and scanning workflows.',
       challenges:
-          'Managing native platform channel intents while ensuring zero-delay launch transitions.',
+          'Integrating QR generation and scanning while maintaining a simple cross-platform user experience.',
       results:
-          'Helps users dramatically reduce screen time through a clean, distraction-free home screen.',
-      githubUrl: '${PortfolioConstants.githubUrl}/unclutter_launcher',
+          'Delivered a functional application capable of generating and reading QR codes.',
+      githubUrl:
+          'https://github.com/arpityadav783791-cloud/QRCodeGeneratorReader',
+      isFeatured: false,
+    ),
+
+    ProjectModel(
+      id: 'cat-dog-classifier',
+      title: 'CatDogClassifier',
+      tagline: 'Flutter image classification application',
+      description:
+          'Built a Flutter image-classification application for identifying cats and dogs, integrating an image classification model into the app workflow.',
+      technologies: [
+        'Flutter',
+        'Dart',
+        'Machine Learning',
+        'Image Classification',
+      ],
+      keyFeatures: [
+        'Image classification',
+        'Cat and dog recognition',
+        'ML model integration',
+      ],
+      architecture:
+          'Flutter application integrating an image classification model into the application workflow.',
+      challenges:
+          'Connecting the machine-learning inference workflow with the Flutter user interface.',
+      results:
+          'Delivered an image classification application capable of identifying cats and dogs.',
+      githubUrl:
+          'https://github.com/arpityadav783791-cloud/CatDogClassifierFlutterApplication',
+      isFeatured: false,
+    ),
+
+    ProjectModel(
+      id: 'duplicate-deleter',
+      title: 'duplicateDeleterApplication',
+      tagline: 'Duplicate file detection and cleanup application',
+      description:
+          'Built a duplicate-file detection and cleanup application with folder scanning, duplicate grouping, storage analysis, selective Keep One flow, and deletion confirmation. Migrated the duplicate-detection engine to Dart and added automated tests for the core scanning and hashing workflow.',
+      technologies: [
+        'Flutter',
+        'Dart',
+        'File System',
+        'Hashing',
+        'Testing',
+      ],
+      keyFeatures: [
+        'Folder scanning',
+        'Duplicate file detection',
+        'Storage analysis',
+        'Keep One workflow',
+        'Deletion confirmation',
+        'Automated testing',
+      ],
+      architecture:
+          'Flutter application with a Dart-based duplicate detection engine using file scanning and hashing.',
+      challenges:
+          'Efficiently scanning files, identifying duplicates, handling large file sets, and safely deleting selected files.',
+      results:
+          'Delivered a duplicate-file cleanup workflow with storage analysis, Keep One functionality, deletion confirmation, and automated tests.',
+      githubUrl:
+          'https://github.com/arpityadav783791-cloud/duplicate_deleter_application',
+      isFeatured: true,
+    ),
+
+    ProjectModel(
+      id: 'engineering-cricket',
+      title: 'EngineeringCricket',
+      tagline: 'Interactive Flutter finger-cricket game',
+      description:
+          'Designed and programmed an interactive finger-cricket game with custom game logic, state handling, animations, and persistent game state.',
+      technologies: [
+        'Flutter',
+        'Dart',
+        'Game Logic',
+        'Animations',
+      ],
+      keyFeatures: [
+        'Custom game logic',
+        'State handling',
+        'Interactive gameplay',
+        'Custom animations',
+        'Persistent game state',
+      ],
+      architecture:
+          'Flutter application built around custom game logic, state handling, animations, and persistent game state.',
+      challenges:
+          'Implementing consistent game rules, interactive state transitions, and smooth gameplay animations.',
+      results:
+          'Delivered an interactive finger-cricket game with custom gameplay logic and persistent state.',
+      githubUrl:
+          'https://github.com/arpityadav783791-cloud/Engineering_cricket_game',
       isFeatured: false,
     ),
   ];

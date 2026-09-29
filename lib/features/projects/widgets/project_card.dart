@@ -97,10 +97,23 @@ class _ProjectCardState extends State<ProjectCard> {
               const SizedBox(height: 12),
 
               // Title & tagline
-              Text(
-                widget.project.title,
-                style: theme.textTheme.titleLarge?.copyWith(
-                  fontWeight: FontWeight.w700,
+              MouseRegion(
+                cursor: widget.project.githubUrl != null
+                    ? SystemMouseCursors.click
+                    : SystemMouseCursors.basic,
+                child: GestureDetector(
+                  onTap: widget.project.githubUrl != null
+                      ? () => UrlHelper.openUrl(widget.project.githubUrl!)
+                      : null,
+                  child: Text(
+                    widget.project.title,
+                    style: theme.textTheme.titleLarge?.copyWith(
+                      fontWeight: FontWeight.w700,
+                      color: widget.project.githubUrl != null
+                          ? theme.colorScheme.primary
+                          : null,
+                    ),
+                  ),
                 ),
               ),
               const SizedBox(height: 4),
