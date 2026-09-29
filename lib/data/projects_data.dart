@@ -8,14 +8,7 @@ class ProjectsData {
       tagline: 'Offline-first activity and habit tracker',
       description:
           'Built an offline-first scheduled activity and habit tracker using BLoC state management and typed Drift persistence. Engineered interactive visual analytics and trend metrics with FL Chart and calendar-based timeline scheduling.',
-      technologies: [
-        'Flutter',
-        'Dart',
-        'BLoC',
-        'Drift',
-        'SQLite',
-        'FL Chart',
-      ],
+      technologies: ['Flutter', 'Dart', 'BLoC', 'Drift', 'SQLite', 'FL Chart'],
       keyFeatures: [
         'Offline-first architecture',
         'Habit and activity tracking',
@@ -72,11 +65,7 @@ class ProjectsData {
       tagline: 'Cross-platform QR code generator and reader',
       description:
           'Developed a cross-platform Flutter application that generates QR codes and reads/scans QR codes from the application interface.',
-      technologies: [
-        'Flutter',
-        'Dart',
-        'QR Code',
-      ],
+      technologies: ['Flutter', 'Dart', 'QR Code'],
       keyFeatures: [
         'QR code generation',
         'QR code scanning',
@@ -95,7 +84,7 @@ class ProjectsData {
 
     ProjectModel(
       id: 'cat-dog-classifier',
-      title: 'CatDogClassifier',
+      title: 'Cat Dog Classifier',
       tagline: 'Flutter image classification application',
       description:
           'Built a Flutter image-classification application for identifying cats and dogs, integrating an image classification model into the app workflow.',
@@ -123,17 +112,11 @@ class ProjectsData {
 
     ProjectModel(
       id: 'duplicate-deleter',
-      title: 'duplicateDeleterApplication',
+      title: 'duplicate Deleter Application',
       tagline: 'Duplicate file detection and cleanup application',
       description:
           'Built a duplicate-file detection and cleanup application with folder scanning, duplicate grouping, storage analysis, selective Keep One flow, and deletion confirmation. Migrated the duplicate-detection engine to Dart and added automated tests for the core scanning and hashing workflow.',
-      technologies: [
-        'Flutter',
-        'Dart',
-        'File System',
-        'Hashing',
-        'Testing',
-      ],
+      technologies: ['Flutter', 'Dart', 'File System', 'Hashing', 'Testing'],
       keyFeatures: [
         'Folder scanning',
         'Duplicate file detection',
@@ -155,16 +138,11 @@ class ProjectsData {
 
     ProjectModel(
       id: 'engineering-cricket',
-      title: 'EngineeringCricket',
+      title: 'Engineering Cricket',
       tagline: 'Interactive Flutter finger-cricket game',
       description:
           'Designed and programmed an interactive finger-cricket game with custom game logic, state handling, animations, and persistent game state.',
-      technologies: [
-        'Flutter',
-        'Dart',
-        'Game Logic',
-        'Animations',
-      ],
+      technologies: ['Flutter', 'Dart', 'Game Logic', 'Animations'],
       keyFeatures: [
         'Custom game logic',
         'State handling',
