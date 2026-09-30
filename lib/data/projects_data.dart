@@ -157,7 +157,7 @@ class ProjectsData {
       results:
           'Delivered an interactive finger-cricket game with custom gameplay logic and persistent state.',
       githubUrl:
-          'https://github.com/arpityadav783791-cloud/Engineering_cricket_game',
+          'https://arpityadav783791-cloud.github.io/Engineering_cricket_game/',
       isFeatured: false,
     ),
   ];
