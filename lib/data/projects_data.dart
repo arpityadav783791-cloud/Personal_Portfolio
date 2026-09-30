@@ -21,7 +21,7 @@ class ProjectsData {
           'Designing reliable offline-first data handling and interactive activity analytics.',
       results:
           'Delivered an offline-first tracker with persistent scheduling, analytics, and trend visualization.',
-      githubUrl: 'https://github.com/RishabhHatlunkar/trackmate',
+      githubUrl: 'https://github.com/RishabhHatlunkar/trackmate.git',
       isFeatured: true,
     ),
 
@@ -106,7 +106,7 @@ class ProjectsData {
       results:
           'Delivered an image classification application capable of identifying cats and dogs.',
       githubUrl:
-          'https://github.com/arpityadav783791-cloud/CatDogClassifierFlutterApplication',
+          'https://github.com/arpityadav783791-cloud/CatDogClassifierFlutterApplication.git',
       isFeatured: false,
     ),
 
@@ -132,7 +132,7 @@ class ProjectsData {
       results:
           'Delivered a duplicate-file cleanup workflow with storage analysis, Keep One functionality, deletion confirmation, and automated tests.',
       githubUrl:
-          'https://github.com/arpityadav783791-cloud/duplicate_deleter_application',
+          'https://github.com/arpityadav783791-cloud/duplicate_deleter_application.git',
       isFeatured: true,
     ),
 
