@@ -4,6 +4,7 @@ import 'package:portfolio/core/responsive/responsive_spacing.dart';
 import 'package:portfolio/core/widgets/app_shell.dart';
 import 'package:portfolio/core/widgets/page_container.dart';
 import 'package:portfolio/features/about/about_section.dart';
+import 'package:portfolio/features/certificates/certificates_section.dart';
 import 'package:portfolio/features/contact/contact_section.dart';
 import 'package:portfolio/features/contact/footer_section.dart';
 import 'package:portfolio/features/experience/education_section.dart';
@@ -35,7 +36,6 @@ class _HomeContent extends StatelessWidget {
         children: [
           // Hero Section (Top)
           const HeroSection(),
-
           SizedBox(height: sectionSpacing),
 
           // About Section
@@ -43,7 +43,6 @@ class _HomeContent extends StatelessWidget {
             key: nav.sectionKeys[PortfolioSection.about],
             child: const AboutSection(),
           ),
-
           SizedBox(height: sectionSpacing),
 
           // Skills Section
@@ -51,7 +50,6 @@ class _HomeContent extends StatelessWidget {
             key: nav.sectionKeys[PortfolioSection.skills],
             child: const SkillsSection(),
           ),
-
           SizedBox(height: sectionSpacing),
 
           // Projects Section
@@ -59,7 +57,14 @@ class _HomeContent extends StatelessWidget {
             key: nav.sectionKeys[PortfolioSection.projects],
             child: const ProjectsSection(),
           ),
+          SizedBox(height: sectionSpacing),
 
+          // Certifications Section
+          // Certifications Section
+          KeyedSubtree(
+            key: nav.sectionKeys[PortfolioSection.certificates],
+            child: const CertificatesSection(),
+          ),
           SizedBox(height: sectionSpacing),
 
           // Experience & Education Section

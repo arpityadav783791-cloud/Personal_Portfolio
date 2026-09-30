@@ -4,6 +4,7 @@ enum PortfolioSection {
   about('About', Icons.person_outline_rounded),
   skills('Skills', Icons.code_rounded),
   projects('Projects', Icons.layers_outlined),
+  certificates('Certificates', Icons.workspace_premium_outlined),
   experience('Experience', Icons.work_outline_rounded),
   contact('Contact', Icons.mail_outline_rounded);
 
