@@ -106,7 +106,7 @@ class ProjectsData {
       results:
           'Delivered an image classification application capable of identifying cats and dogs.',
       githubUrl:
-          'https://github.com/arpityadav783791-cloud/CatDogClassifierFlutterApplication.git',
+          'https://arpityadav783791-cloud.github.io/CatDogClassifierFlutterApplication/',
       isFeatured: false,
     ),
 
